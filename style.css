@@ -1,0 +1,88 @@
+/*
+Theme Name: Enzio Child
+Description: Child theme for the Enzio themes
+Author: gaviathemes
+Template: enzio
+*/
+
+
+
+:root{
+    --Primary--color:#9d3f96;
+    --secondary--color:#f59e21;
+    --light--pink:#f1e5f1;  
+}
+
+/* Utility CLasses */
+
+    /* Spacing Classes */
+
+.my--2{
+    margin-top:2rem!important;
+}
+
+
+.c--title{
+    color:var(--Primary--color);
+}
+.canvas-menu{
+    display:none!important;
+} 
+
+
+.header-v3 .stuck,.pager .paginations a.active {
+    /* background: #222; */
+    background: #f59e21  !important;
+    
+  }
+
+.header-v2 ul.navbar-nav.gva-nav-menu > li.current-menu-item > a{
+    color:#f59e21!important;
+}
+ .header-v2 ul.navbar-nav.gva-nav-menu > li > a:after{
+    background: #f59e21!important;
+    /* color:red!important; */
+}
+ .header-v2 ul.navbar-nav.gva-nav-menu > li > a:hover{
+    
+    color:#f59e21!important;
+}
+
+
+
+/* blog links' */
+.post-small .post .cat-links a ,.post .cat-links a{
+    color:#f59e21!important;
+}
+
+.entry-title a{
+    color:#9d3f96;
+}
+.btn-inline:after{
+    color:var(--secondary--color)
+}
+/* Contact Form */
+
+.wpcf7-form .action .wpcf7-submit{
+    background-color:var(--secondary--color);
+
+}
+.wpcf7-form .action .wpcf7-submit:hover,a.active, .pager .paginations a:hover, .pager .paginations a:focus{
+    background-color: var(--Primary--color);
+}
+
+/* Desktop Only Styling */
+@media only screen and (min-width:760px){
+    .mobile--only{
+        display: none!important;
+    }
+}
+@media only screen and (max-width:650px){
+    .desktop--only{
+        display: none!important;
+    }
+    
+    .canvas-menu{
+        display:inline-block!important;
+    } 
+}
